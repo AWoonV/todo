@@ -23,7 +23,7 @@ class Todos {
         return new Promise(async(resolve, reject) => {
             const json = JSON.stringify({description: text})
             fetch(this.#backend_url + '/new',{
-                methos: 'post',
+                method: 'post',
                 headers: {'Content-Type':'application/json'},
                 body: json
             })
